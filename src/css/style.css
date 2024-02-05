@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logodesktop {
+  display: none;
+}
+.logomobile {
+  display: block;
+}
+
+.navItem li {
+  margin-right: 30px; /* Adjust the value to increase or decrease spacing */
+}
+.homeitem {
+  font-size: 18px;
+  color: #252525;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hometext {
+  padding-top: 100px;
+  padding-left: 130px;
+  margin-left: 100px !important;
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
+@media only screen and (min-width: 768px) {
+  .logodesktop {
+    display: block;
+  }
+  .logomobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .hometext {
+    margin-left: 0px;
+    margin-left: 10% !important;
+    padding-left: 0px;
+    padding-top: 100px;
+  }
+  .banner__item__pic {
+    width: 330px;
+  }
+}
+
+/* apply stye when screen size is less than 380 or less  */
+@media screen and (max-width: 380px) {
+  .banner__item__pic {
+    width: 330px;
+  }
+}
